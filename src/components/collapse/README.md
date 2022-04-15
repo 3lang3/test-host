@@ -1,3 +1,7 @@
+---
+simulator:
+  compact: true
+---
 # Collapse 折叠面板
 
 ## 介绍

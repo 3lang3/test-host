@@ -22,9 +22,10 @@ export default () => {
       />
 
       <Button
+        block
+        style={{ margin: '10px auto', width: '90%' }}
         type="primary"
         size="small"
-        block
         onClick={() =>
           set({
             value: ['330000', '330100', '330104'],

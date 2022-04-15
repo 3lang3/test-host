@@ -1,8 +1,6 @@
 ---
 simulator:
   compact: true
-  style:
-    background: '#f5f5f5'
 ---
 
 # ActionBar 动作栏

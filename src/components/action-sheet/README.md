@@ -1,8 +1,3 @@
----
-simulator:
-  compact: true
----
-
 # ActionSheet 动作面板
 
 ## 介绍

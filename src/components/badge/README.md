@@ -1,6 +1,7 @@
 ---
-mobile-className: 'vant-doc-demo-section--card'
-mobile-background: '#fff'
+simulator:
+  style:
+    background: '#fff'
 ---
 
 # Badge 徽标

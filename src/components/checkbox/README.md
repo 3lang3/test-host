@@ -1,3 +1,10 @@
+---
+simulator:
+  compact: true
+  style:
+    background: '#fff'
+---
+
 # Checkbox 复选框
 
 ## 介绍
