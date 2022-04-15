@@ -1,0 +1,5 @@
+docs-dist
+.rcdoc
+dist
+/lib
+/es
