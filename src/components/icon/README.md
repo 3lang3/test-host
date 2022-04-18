@@ -1,6 +1,6 @@
 ---
-mobile-className: 'vant-doc-demo-section--card'
 fluid: true
+slug: false
 ---
 
 # Icon 图标

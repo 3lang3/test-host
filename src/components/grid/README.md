@@ -1,3 +1,8 @@
+---
+simulator:
+  compact: true
+---
+
 # Grid 宫格
 
 ## 介绍

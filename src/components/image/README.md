@@ -1,3 +1,9 @@
+---
+simulator:
+  style:
+    background: '#fff'
+---
+
 # Image 图片
 
 ## 介绍

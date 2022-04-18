@@ -6,7 +6,7 @@ const IconFont = createFromIconfontCN('//at.alicdn.com/t/font_1619071_dqiwns2g0d
 
 export default () => {
   return (
-    <Space gap={20}>
+    <Space className='demo-icon' gap={20}>
       <IconFont name="icon-weunblock" />
       <IconFont name="icon-1111" />
     </Space>

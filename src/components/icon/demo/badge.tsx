@@ -4,7 +4,7 @@ import { ChatO } from '@react-vant/icons';
 
 export default () => {
   return (
-    <Space gap={20}>
+    <Space className='demo-icon' gap={20}>
       <Badge dot>
         <ChatO />
       </Badge>

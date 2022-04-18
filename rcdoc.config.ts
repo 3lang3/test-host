@@ -12,7 +12,7 @@ export default defineConfig({
       path: '/',
     },
     {
-      title: '指南',
+      title: '文档',
       path: '/guide',
     },
     {
@@ -84,13 +84,18 @@ export default defineConfig({
       { title: 'v3', path: 'https://v3' },
     ],
     themeConfig: {
-      simulator: true,
+      simulator: {
+        include: ['/components'],
+      },
     },
     algolia: {
-      appId: 'R2IYF7ETH7',
-      apiKey: '599cec31baffa4868cae4e79f180729b',
-      indexName: 'docsearch',
-    },
+      appId: 'E3Q32VXBYB',
+      apiKey: 'c286dbe93a56bf25885c5e47cbe8bd4a',
+      indexName: 'react-vant',
+      sitemap: {
+        hostname: 'https://3lang3.github.io/react-vant',
+      }
+    }
   },
   vite: {
     optimizeDeps: {

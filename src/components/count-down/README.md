@@ -68,7 +68,7 @@ export default () => {
 
 ```jsx
 /**
- * title: 毫秒级渲染
+ * title: 自定义样式
  */
 import React from 'react';
 import { CountDown } from 'react-vant';

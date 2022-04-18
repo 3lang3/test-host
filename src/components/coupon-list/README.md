@@ -1,3 +1,8 @@
+---
+simulator:
+  compact: true
+---
+
 # Coupon 优惠券选择器
 
 ## 介绍

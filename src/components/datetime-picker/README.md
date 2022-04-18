@@ -1,3 +1,8 @@
+---
+simulator:
+  compact: true
+---
+
 # DatetimePicker 时间选择
 
 ## 介绍

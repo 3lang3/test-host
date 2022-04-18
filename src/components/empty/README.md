@@ -1,6 +1,8 @@
 ---
-mobile-className: 'vant-doc-demo-section--card'
-mobile-background: '#fff'
+simulator:
+  compact: true
+  style:
+    background: '#fff'
 ---
 
 # Empty 空状态

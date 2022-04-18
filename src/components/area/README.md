@@ -1,3 +1,8 @@
+---
+simulator:
+  compact: true
+---
+
 # Area 省市区选择
 
 ## 介绍

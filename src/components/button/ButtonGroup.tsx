@@ -17,7 +17,7 @@ export const ButtonGroup: FC<ButtonGroupProps> = ({
 
   const internalClick = (e) => {
     if (props.disabled) return;
-    onClick(e);
+    onClick?.(e);
   };
 
   return (

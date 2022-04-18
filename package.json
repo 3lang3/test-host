@@ -16,7 +16,8 @@
   "homepage": "https://3lang3.github.io/react-vant",
   "repository": {
     "type": "git",
-    "url": "git@github.com:3lang3/react-vant.git"
+    "url": "git@github.com:3lang3/react-vant.git",
+    "branch": "main"
   },
   "funding": {
     "type": "opencollective",

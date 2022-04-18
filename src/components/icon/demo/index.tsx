@@ -131,7 +131,7 @@ export default () => {
         <>
           <Typography.Title level={3}>线框风格</Typography.Title>
           <Grid style={{ marginBottom: 40 }} border={false} columnNum={7}>
-            {getTypeIcons('outline').map((item) => (
+            {lineIcons.map((item) => (
               <Grid.Item
                 icon={<item.component />}
                 text={item.name}
@@ -146,7 +146,7 @@ export default () => {
         <>
           <Typography.Title level={3}>实底风格</Typography.Title>
           <Grid style={{ marginBottom: 40 }} border={false} columnNum={7}>
-            {getTypeIcons('filled').map((item) => (
+            {fillIcons.map((item) => (
               <Grid.Item
                 icon={<item.component />}
                 text={item.name}

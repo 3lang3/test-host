@@ -29,6 +29,15 @@ import {
 } from '@react-vant/icons';
 import './home.less';
 
+const buttons = ['React', 'Vant', 'Next']
+
+const ButtonGroupDemo = () => {
+  const [current, setCurrent] = React.useState(0);
+  return <Button.Group className="_home-button-group" round block type="primary">
+    {buttons.map((button, index) => <Button key={button} plain={index !== current} onClick={() => setCurrent(index)}>{button}</Button>)}
+</Button.Group>
+}
+
 const SliderDemo = () => {
   const [value, updateValue] = React.useState<[number, number]>([20, 50]);
   return <Slider barHeight={4} range value={value} onChange={updateValue} vertical />;
@@ -95,6 +104,7 @@ export default () => {
                     </Typography.Text>
                     <Button
                       round
+                      plain
                       size="mini"
                       icon={
                         <Exchange style={{ fontSize: 18, color: '#3f45ff', fontWeight: 'bold' }} />
@@ -140,11 +150,7 @@ export default () => {
                 </Space>
               </Flex>
 
-              <Button.Group className="_home-button-group" plain round block type="primary">
-                <Button type="primary">React</Button>
-                <Button>Vant</Button>
-                <Button>Next</Button>
-              </Button.Group>
+              <ButtonGroupDemo />
 
               <Space className="_home-switch" align="center" block justify="between">
                 <Switch defaultChecked />
@@ -227,16 +233,16 @@ export default () => {
                 </Flex.Item>
               </Flex>
 
-              <Space className="_home-steps" justify="between" block>
-                <Space direction="vertical">
+              <Space className="_home-steps" justify="between" direction="vertical" block>
+                <Space justify="between" block>
                   <Typography.Title level={5}>Add these properties:</Typography.Title>
-                  <Steps activeColor="#3f45ff" direction="vertical" active={2}>
-                    <Steps.Item>Margin Top</Steps.Item>
-                    <Steps.Item>Padding Bottom</Steps.Item>
-                    <Steps.Item>Flexbox</Steps.Item>
-                  </Steps>
+                  <WarningO style={{ fontSize: 24, color: '#888' }} />
                 </Space>
-                <WarningO style={{ fontSize: 24, color: '#888' }} />
+                <Steps activeColor="#3f45ff" direction="vertical" active={2}>
+                  <Steps.Item>Margin Top</Steps.Item>
+                  <Steps.Item>Padding Bottom</Steps.Item>
+                  <Steps.Item>Flexbox</Steps.Item>
+                </Steps>
               </Space>
 
               <Cell

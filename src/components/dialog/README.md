@@ -1,3 +1,8 @@
+---
+simulator:
+  compact: true
+---
+
 # Dialog 弹出框
 
 ## 介绍
