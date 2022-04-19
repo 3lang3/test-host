@@ -23,23 +23,23 @@ export default defineConfig({
       title: 'Hooks',
       path: '/hooks',
     },
-    {
-      title: '了解更多',
-      children: [
-        {
-          title: '在线体验',
-          path: 'https://codesandbox.io/s/antd-mobile-snrxr?file=/package.json',
-        },
-        {
-          title: 'Roadmap',
-          path: 'https://github.com/ant-design/ant-design-mobile/discussions/3924',
-        },
-        {
-          title: '参与贡献',
-          path: 'https://github.com/3lang3/react-vant/blob/main/CONTRIBUTING.md',
-        },
-      ],
-    },
+    // {
+    //   title: '了解更多',
+    //   children: [
+    //     {
+    //       title: '在线体验',
+    //       path: 'https://codesandbox.io/s/antd-mobile-snrxr?file=/package.json',
+    //     },
+    //     {
+    //       title: 'Roadmap',
+    //       path: 'https://github.com/ant-design/ant-design-mobile/discussions/3924',
+    //     },
+    //     {
+    //       title: '参与贡献',
+    //       path: 'https://github.com/3lang3/react-vant/blob/main/CONTRIBUTING.md',
+    //     },
+    //   ],
+    // },
     {
       title: 'Vant',
       path: 'https://github.com/ant-design/ant-design',

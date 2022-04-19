@@ -1,6 +1,10 @@
 ---
 fluid: true
 slug: false
+simulator:
+  compact: false
+  style:
+    background: '#fff'
 ---
 
 # Icon 图标
