@@ -1,6 +1,8 @@
 ---
-mobile-className: 'vant-doc-demo-section--card'
-mobile-background: '#fff'
+simulator:
+  compact: false
+  style:
+    background: '#fff'
 ---
 
 # Sku 商品规格

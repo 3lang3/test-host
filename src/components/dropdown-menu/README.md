@@ -1,8 +1,3 @@
----
-simulator:
-  compact: true
----
-
 # DropdownMenu 下拉菜单
 
 ## 介绍

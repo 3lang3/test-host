@@ -1,8 +1,3 @@
----
-simulator:
-  compact: true
----
-
 # Cascader 级联选择
 
 ## 介绍

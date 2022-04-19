@@ -1,3 +1,8 @@
+---
+simulator:
+  compact: false
+---
+
 # Pagination 分页
 
 ## 介绍

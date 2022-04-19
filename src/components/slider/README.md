@@ -1,5 +1,7 @@
 ---
-mobile-background: '#fff'
+simulator:
+  style:
+    background: '#fff'
 ---
 
 # Slider 滑块

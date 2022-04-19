@@ -1,6 +1,5 @@
 ---
 simulator:
-  compact: true
   style:
     background: '#fff'
 ---

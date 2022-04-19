@@ -1,5 +1,8 @@
 ---
-mobile-background: '#fff'
+simulator:
+  compact: false
+  style:
+    background: '#fff'
 ---
 
 # Loading 加载

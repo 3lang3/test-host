@@ -1,7 +1,7 @@
 ---
-mobile-className: 'vant-doc-demo-section--card'
+simulator:
+  compact: false
 ---
-
 # Card 卡片
 
 ## 介绍

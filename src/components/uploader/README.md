@@ -1,5 +1,8 @@
 ---
-mobile-background: '#ffff'
+simulator:
+  compact: false
+  style:
+    background: '#fff'
 ---
 
 # Uploader 文件上传

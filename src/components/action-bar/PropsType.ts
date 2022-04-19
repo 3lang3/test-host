@@ -4,7 +4,7 @@ import { ButtonType } from '../button/PropsType';
 import { BaseTypeProps } from '../utils';
 
 export interface ActionBarProps extends BaseTypeProps {
-  /** 是否开启底部安全区适配	 */
+  /** 是否开启底部安全区适配 */
   safeAreaInsetBottom?: boolean;
 }
 

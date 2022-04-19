@@ -1,6 +1,8 @@
 ---
-mobile-className: 'vant-doc-demo-section--card'
+simulator:
+  compact: false
 ---
+
 
 # Popover 气泡弹出框
 
@@ -58,6 +60,7 @@ export default () => {
 ```tsx
 /**
  * title: 弹出位置
+ * compact: true
  */
 import React, { useRef, useState } from 'react';
 import { Toast, Popover, Popup, Picker, Cell } from 'react-vant';

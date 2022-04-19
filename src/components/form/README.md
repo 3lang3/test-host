@@ -1,8 +1,3 @@
----
-simulator:
-  compact: true
----
-
 # Form 表单
 
 ## 介绍

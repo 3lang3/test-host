@@ -1,6 +1,6 @@
 ---
-mobile-className: 'vant-doc-demo-section--card'
-mobile-background: '#fff'
+simulator:
+  compact: false
 ---
 
 # CountDown 倒计时

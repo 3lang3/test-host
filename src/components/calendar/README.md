@@ -1,8 +1,3 @@
----
-simulator:
-  compact: true
----
-
 # Calendar 日历
 
 ## 介绍

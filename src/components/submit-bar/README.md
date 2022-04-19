@@ -20,7 +20,7 @@ import React from 'react';
 import { SubmitBar } from 'react-vant';
 
 export default () => {
-  return <SubmitBar price="3050" buttonText="提交订单" />;
+  return <div className="demo-submit-bar"><SubmitBar price="3050" buttonText="提交订单" /></div>;
 };
 ```
 
@@ -42,7 +42,7 @@ import React from 'react';
 import { SubmitBar } from 'react-vant';
 
 export default () => {
-  return <SubmitBar loading price="3050" buttonText="提交订单" />;
+  return <div className="demo-submit-bar"><SubmitBar loading price="3050" buttonText="提交订单" /></div>;
 };
 ```
 
@@ -60,6 +60,7 @@ import './demo/style.less';
 
 export default () => {
   return (
+    <div className="demo-submit-bar">
     <SubmitBar
       price="3050"
       buttonText="提交订单"
@@ -72,6 +73,7 @@ export default () => {
     >
       <Checkbox>全选</Checkbox>
     </SubmitBar>
+    </div>
   );
 };
 ```

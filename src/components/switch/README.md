@@ -1,3 +1,10 @@
+---
+simulator:
+  compact: false
+  style:
+    background: '#fff'
+---
+
 # Switch 开关
 
 ## 介绍

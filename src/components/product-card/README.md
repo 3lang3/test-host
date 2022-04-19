@@ -1,6 +1,9 @@
 ---
-mobile-background: '#fff'
+simulator:
+  style: 
+    background: '#fff'
 ---
+
 
 # ProductCard 商品卡片
 

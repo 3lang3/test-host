@@ -1,6 +1,8 @@
 ---
-mobile-className: 'vant-doc-demo-section--card'
-mobile-background: '#fff'
+simulator:
+  compact: false
+  style:
+    background: '#fff'
 ---
 
 # Space 间距

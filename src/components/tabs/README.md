@@ -22,6 +22,7 @@ import './demo/style.less';
 
 export default () => {
   return (
+    <div className="demo-tabs">
     <Tabs active={0}>
       {[1, 2, 3].map((item) => (
         <Tabs.TabPane key={item} title={`标签${item}`}>
@@ -29,6 +30,7 @@ export default () => {
         </Tabs.TabPane>
       ))}
     </Tabs>
+    </div>
   );
 };
 ```
@@ -46,6 +48,7 @@ import { Tabs } from 'react-vant';
 
 export default () => {
   return (
+    <div className="demo-tabs">
     <Tabs active="c">
       {['a', 'b', 'c'].map((item, index) => (
         <Tabs.TabPane name={item} key={item} title={`标签${index + 1}`}>
@@ -53,6 +56,7 @@ export default () => {
         </Tabs.TabPane>
       ))}
     </Tabs>
+    </div>
   );
 };
 ```
@@ -70,6 +74,7 @@ import { Tabs } from 'react-vant';
 
 export default () => {
   return (
+    <div className="demo-tabs">
     <Tabs>
       {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
         <Tabs.TabPane key={item} title={`标签${item}`}>
@@ -77,6 +82,7 @@ export default () => {
         </Tabs.TabPane>
       ))}
     </Tabs>
+    </div>
   );
 };
 ```
@@ -94,6 +100,7 @@ import { Tabs } from 'react-vant';
 
 export default () => {
   return (
+    <div className="demo-tabs">
     <Tabs active="c">
       <Tabs.TabPane title="标签1">内容1</Tabs.TabPane>
       <Tabs.TabPane title="标签2" disabled>
@@ -101,6 +108,7 @@ export default () => {
       </Tabs.TabPane>
       <Tabs.TabPane title="标签3">内容3</Tabs.TabPane>
     </Tabs>
+    </div>
   );
 };
 ```
@@ -118,6 +126,7 @@ import { Tabs } from 'react-vant';
 
 export default () => {
   return (
+    <div className="demo-tabs">
     <Tabs align="start">
       {[1, 2, 3].map((item) => (
         <Tabs.TabPane key={item} title={`标签${item}`}>
@@ -125,6 +134,7 @@ export default () => {
         </Tabs.TabPane>
       ))}
     </Tabs>
+    </div>
   );
 };
 ```
@@ -142,6 +152,7 @@ import { Tabs } from 'react-vant';
 
 export default () => {
   return (
+    <div className="demo-tabs">
     <Tabs type="card">
       {[1, 2, 3].map((item) => (
         <Tabs.TabPane key={item} title={`标签${item}`}>
@@ -149,6 +160,7 @@ export default () => {
         </Tabs.TabPane>
       ))}
     </Tabs>
+    </div>
   );
 };
 ```
@@ -166,6 +178,7 @@ import { Tabs } from 'react-vant';
 
 export default () => {
   return (
+    <div className="demo-tabs">
     <Tabs sticky swipeable>
       {[1, 2, 3, 4].map((item) => (
         <Tabs.TabPane key={item} title={`标签${item}`}>
@@ -173,6 +186,7 @@ export default () => {
         </Tabs.TabPane>
       ))}
     </Tabs>
+    </div>
   );
 };
 ```
@@ -190,6 +204,7 @@ import { Tabs } from 'react-vant';
 
 export default () => {
   return (
+    <div className="demo-tabs">
     <Tabs sticky scrollspy={{ autoFocusLast: true, reachBottomThreshold: 50 }}>
       {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
         <Tabs.TabPane key={item} title={`标签${item}`}>
@@ -197,6 +212,7 @@ export default () => {
         </Tabs.TabPane>
       ))}
     </Tabs>
+    </div>
   );
 };
 ```

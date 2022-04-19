@@ -1,5 +1,7 @@
 ---
-mobile-background: '#fff'
+simulator:
+  style:
+    background: '#fff'
 ---
 
 # NoticeBar 通知栏

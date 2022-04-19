@@ -21,7 +21,7 @@ import { NumberKeyboard } from 'react-vant';
 - 当 theme 为 `custom` 时，支持以数组的形式配置两个 `extraKey`。
 - 通过 `randomKeyOrder` 属性可以随机排序数字键盘，常用于安全等级较高的场景。
 
-<code card src="./demo/base.tsx" />
+<code title="基础用法" card src="./demo/base.tsx" />
 
 > 点击键盘以外的区域时，键盘会自动收起，通过阻止元素上的 touchstart 事件冒泡可以避免键盘收起。
 

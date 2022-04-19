@@ -1,5 +1,6 @@
 ---
-mobile-className: 'vant-doc-demo-section--card'
+simulator:
+  compact: false
 ---
 
 # Circle 环形进度条

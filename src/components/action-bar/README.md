@@ -1,8 +1,3 @@
----
-simulator:
-  compact: true
----
-
 # ActionBar 动作栏
 
 ## 介绍

@@ -1,3 +1,9 @@
+---
+simulator:
+  compact: false
+  style:
+    background: '#fff'
+---
 # Rate 评分
 
 ## 介绍

@@ -1,8 +1,3 @@
----
-simulator:
-  compact: true
----
-
 # Flex 布局
 
 ## 介绍

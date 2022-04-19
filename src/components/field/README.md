@@ -1,8 +1,3 @@
----
-simulator:
-  compact: true
----
-
 # Field 输入框
 
 ## 介绍

@@ -1,3 +1,8 @@
+---
+simulator:
+  compact: false
+---
+
 # Lazyload 懒加载
 
 ## 介绍

@@ -1,3 +1,8 @@
+---
+simulator:
+  compact: false
+---
+
 # Button 按钮
 
 ## 介绍

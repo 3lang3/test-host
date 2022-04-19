@@ -4,6 +4,7 @@ import { SubmitBar } from 'react-vant';
 
 export default () => {
   return (
+    <div className="demo-submit-bar">
     <SubmitBar
       disabled
       price="3050"
@@ -11,5 +12,6 @@ export default () => {
       tipIcon={<InfoO />}
       buttonText="提交订单"
     />
+    </div>
   );
 };

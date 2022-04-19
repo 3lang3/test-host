@@ -1,5 +1,7 @@
 ---
-mobile-background: '#fff'
+simulator:
+  style:
+    background: '#fff'
 ---
 
 # Skeleton 骨架屏

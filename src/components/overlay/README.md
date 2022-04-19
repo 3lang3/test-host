@@ -1,5 +1,6 @@
 ---
-mobile-className: vant-doc-demo-section--card
+simulator:
+  compact: false
 ---
 
 # Overlay 遮罩层

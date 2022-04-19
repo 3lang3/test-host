@@ -1,3 +1,9 @@
+---
+simulator:
+  compact: false
+---
+
+
 # Radio 单选框
 
 ## 介绍
@@ -95,7 +101,7 @@ import { Radio } from 'react-vant';
 
 export default () => {
   return (
-    <Radio.Group defaultValue="1" style={{ marginLeft: 16 }}>
+    <Radio.Group defaultValue="1">
       <Radio shape="square" name="1">
         单选框1
       </Radio>
@@ -114,7 +120,6 @@ export default () => {
 ```jsx
 /**
  * title: 自定义颜色
- * card: true
  */
 import React from 'react';
 import { Radio } from 'react-vant';
@@ -166,7 +171,6 @@ export default () => {
 ```jsx
 /**
  * title: 禁用文本点击
- * card: true
  */
 import React from 'react';
 import { Radio } from 'react-vant';
@@ -195,7 +199,7 @@ export default () => {
 
 此时你需要再引入 `Cell` 和 `CellGroup` 组件。
 
-<code title="与 Cell 组件一起使用" src="./demo/cell.tsx" />
+<code title="与 Cell 组件一起使用" compact="true" src="./demo/cell.tsx" />
 
 ## API
 
