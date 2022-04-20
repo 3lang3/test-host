@@ -1,0 +1,6 @@
+docs-dist
+.rcdoc
+dist
+/lib
+/es
+pnpm-global
