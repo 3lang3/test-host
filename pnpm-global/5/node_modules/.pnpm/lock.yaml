@@ -1,7 +1,0 @@
-lockfileVersion: 5.3
-
-specifiers:
-  '@rcdoc/cli': ^0.0.0-dev.4
-
-dependencies:
-  '@rcdoc/cli': link:../../../../../.nvm/versions/node/v16.9.1/pnpm-global/5/node_modules/@rcdoc/cli
