@@ -1,6 +1,6 @@
+import { useCN } from '../docs/component/useCN';
 import React from 'react'
 import logo from '../public/logo.svg';
-import { useCN } from '../docs/component/home'
 import './Footer.less'
 
 export default () => {

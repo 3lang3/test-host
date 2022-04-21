@@ -27,8 +27,8 @@ import {
   WarningO,
   AppsO,
 } from '@react-vant/icons';
-import { MdocSiteContext } from '@rcdoc/theme'
 import './home.less';
+import { useCN } from './useCN';
 
 const buttons = ['React', 'Vant', 'Next']
 
@@ -43,12 +43,6 @@ const SliderDemo = () => {
   const [value, updateValue] = React.useState<[number, number]>([20, 50]);
   return <Slider barHeight={4} range value={value} onChange={updateValue} vertical />;
 };
-
-export const useCN = () => {
-  const { locale } = React.useContext(MdocSiteContext);
-  if (!locale) return true
-  return locale.current[0] === 'zh';
-}
 
 export default () => {
   const isCN = useCN();
