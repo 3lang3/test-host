@@ -5,6 +5,7 @@ export default () => {
   const [value, setValue] = useState(false);
 
   return (
+    <div className="demo-checkbox">
     <Checkbox
       checked={value}
       onChange={(val) => {
@@ -18,5 +19,6 @@ export default () => {
     >
       复选框
     </Checkbox>
+    </div>
   );
 };

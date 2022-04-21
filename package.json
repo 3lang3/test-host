@@ -28,46 +28,45 @@
   "sideEffects": [
     "**/*.css",
     "**/*.less",
-    "./es/index.js",
+    "./dist/es/index.js",
     "./src/index.ts",
-    "./es/styles/index.js",
+    "./dist/es/styles/index.js",
     "./src/styles/index.ts"
   ],
-  "main": "./lib/index.js",
-  "jsdelivr": "./lib/react-vant.min.js",
-  "unpkg": "./lib/react-vant.min.js",
-  "module": "./es/index.js",
-  "style": "./lib/index.css",
-  "typings": "./es/index.d.ts",
+  "main": "./dist/index.js",
+  "jsdelivr": "./dist/react-vant.min.js",
+  "unpkg": "./dist/react-vant.min.js",
+  "module": "./dist/es/index.js",
+  "style": "./dist/index.css",
+  "typings": "./dist/es/index.d.ts",
   "exports": {
     ".": {
       "node": {
-        "import": "./lib/react-vant.es.js",
-        "require": "./lib/react-vant.cjs.js"
+        "import": "./dist/react-vant.es.js",
+        "require": "./dist/react-vant.cjs.js"
       },
-      "import": "./es/index.js",
-      "require": "./lib/index.js",
-      "types": "./lib/index.d.ts"
+      "import": "./dist/es/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     },
-    "./es": "./es/index.js",
-    "./lib": "./lib/index.js",
-    "./es/": "./es/",
-    "./es/*": "./es/*/index.js",
-    "./lib/": "./lib/",
-    "./2x": "./2x",
+    "./es": "./dist/es/index.js",
+    "./lib": "./dist/index.js",
+    "./es/": "./dist/es/",
+    "./es/*": "./dist/es/*/index.js",
+    "./dist/": "./dist/",
+    "./2x": "./dist/2x",
     "./package.json": "./package.json"
   },
   "files": [
-    "lib",
-    "es",
-    "2x"
+    "dist"
   ],
   "scripts": {
     "prepack": "yarn build",
     "prettier": "npx prettier --write vant.config.js src/index.ts",
     "release": "pnpm publish --tag next",
     "release:dev": "pnpm publish --tag dev",
-    "site:deploy": "pnpm run build:site && gh-pages -d site --add",
+    "docs:deploy": "pnpm run docs:build && gh-pages -d docs-dist --add",
+    "deploy:gh-pages": "gh-pages -d docs-dist",
     "test:coverage": "open tests/coverage/index.html",
     "dev": "rcdoc dev",
     "build": "rcdoc build",
@@ -81,6 +80,7 @@
   ],
   "dependencies": {
     "@rcdoc/cli": "^0.0.0-dev.4",
+    "@rcdoc/theme": "^0.0.0-dev.1",
     "@react-spring/web": "^9.3.0",
     "@react-vant/icons": "latest",
     "@use-gesture/react": "^10.1.1",

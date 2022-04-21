@@ -4,52 +4,168 @@ export default defineConfig({
   title: 'react vant',
   description: '轻量、可靠的移动端 React 组件库',
   logo: '/logo.svg',
-  locales: false,
-  // locales: [['zh', '中文'], ['en', 'English']],
-  navs: [
-    {
-      title: '首页',
-      path: '/',
-    },
-    {
-      title: '文档',
-      path: '/guide',
-    },
-    {
-      title: '组件',
-      path: '/components',
-    },
-    {
-      title: 'Hooks',
-      path: '/hooks',
-    },
-    // {
-    //   title: '了解更多',
-    //   children: [
-    //     {
-    //       title: '在线体验',
-    //       path: 'https://codesandbox.io/s/antd-mobile-snrxr?file=/package.json',
-    //     },
-    //     {
-    //       title: 'Roadmap',
-    //       path: 'https://github.com/ant-design/ant-design-mobile/discussions/3924',
-    //     },
-    //     {
-    //       title: '参与贡献',
-    //       path: 'https://github.com/3lang3/react-vant/blob/main/CONTRIBUTING.md',
-    //     },
-    //   ],
-    // },
-    {
-      title: 'Vant',
-      path: 'https://github.com/ant-design/ant-design',
-    },
-    {
-      title: 'Taroify',
-      path: 'https://github.com/mallfoundry/taroify',
-    },
-  ],
+  locales: [['zh', '🇨🇳 中文'], ['en', '🇺🇸 English']],
+  navs: {
+    'zh': [
+      {
+        title: '首页',
+        path: '/',
+        index: true
+      },
+      {
+        title: '文档',
+        path: '/guide',
+      },
+      {
+        title: '组件',
+        path: '/components',
+      },
+      {
+        title: 'Hooks',
+        path: '/hooks',
+      },
+      {
+        title: 'Vant',
+        path: 'https://github.com/ant-design/ant-design',
+      },
+      {
+        title: 'Taroify',
+        path: 'https://github.com/mallfoundry/taroify',
+      },
+    ],
+    'en': [
+      {
+        title: 'Home',
+        path: '/en',
+        index: true,
+      },
+      {
+        title: 'Guide',
+        path: '/en/guide',
+      },
+      {
+        title: 'Components',
+        path: '/en/components',
+      },
+      {
+        title: 'Hooks',
+        path: '/en/hooks',
+      },
+      {
+        title: 'Vant',
+        path: 'https://github.com/ant-design/ant-design',
+      },
+      {
+        title: 'Taroify',
+        path: 'https://github.com/mallfoundry/taroify',
+      },
+    ],
+  },
   menus: {
+    '/components': [
+      {
+        title: '布局组建',
+        children: [
+          '/components/flex',
+          '/components/space',
+        ],
+      },
+      {
+        title: '基础组建',
+        children: [
+          '/components/button',
+          '/components/cell',
+          '/components/config-provider',
+          '/components/typography',
+          '/components/icon',
+          '/components/image',
+          '/components/popup',
+          '/components/styles',
+          '/components/toast',
+        ],
+      },
+      {
+        title: '表单组建',
+        children: [
+          '/components/calendar',
+          '/components/cascader',
+          '/components/checkbox',
+          '/components/datetime-picker',
+          '/components/field',
+          '/components/form',
+          '/components/number-keyboard',
+          '/components/password-input',
+          '/components/picker',
+          '/components/radio',
+          '/components/rate',
+          '/components/search',
+          '/components/slider',
+          '/components/stepper',
+          '/components/switch',
+          '/components/uploader',
+        ],
+      },
+      {
+        title: '反馈组件',
+        children: [
+          '/components/action-sheet',
+          '/components/dialog',
+          '/components/dropdown-menu',
+          '/components/loading',
+          '/components/notify',
+          '/components/overlay',
+          '/components/pull-refresh',
+          '/components/share-sheet',
+          '/components/swipe-cell',
+        ],
+      },
+      {
+        title: '展示组件',
+        children: [
+          '/components/badge',
+          '/components/card',
+          '/components/circle',
+          '/components/collapse',
+          '/components/count-down',
+          '/components/divider',
+          '/components/empty',
+          '/components/image-preview',
+          '/components/lazyload',
+          '/components/list',
+          '/components/skeleton',
+          '/components/steps',
+          '/components/notice-bar',
+          '/components/popover',
+          '/components/progress',
+          '/components/sticky',
+          '/components/swiper',
+          '/components/tag',
+        ],
+      },
+      {
+        title: '导航组件',
+        children: [
+          '/components/action-bar',
+          '/components/grid',
+          '/components/index-bar',
+          '/components/nav-bar',
+          '/components/pagination',
+          '/components/sidebar',
+          '/components/tabs',
+          '/components/tabbar',
+        ],
+      },
+      {
+        title: '业务组件',
+        children: [
+          '/components/area',
+          '/components/product-card',
+          '/components/coupon-list',
+          '/components/submit-bar',
+          '/components/sku'
+        ],
+      },
+    ],
     '/hooks': [
       {
         children: ['/hooks/intro'],
@@ -86,7 +202,7 @@ export default defineConfig({
     ],
     themeConfig: {
       simulator: {
-        include: ['/components'],
+        include: ['/components', '/en/components'],
         compact: true
       },
     },

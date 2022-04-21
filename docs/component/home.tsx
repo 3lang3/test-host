@@ -27,6 +27,7 @@ import {
   WarningO,
   AppsO,
 } from '@react-vant/icons';
+import { MdocSiteContext } from '@rcdoc/theme'
 import './home.less';
 
 const buttons = ['React', 'Vant', 'Next']
@@ -43,7 +44,15 @@ const SliderDemo = () => {
   return <Slider barHeight={4} range value={value} onChange={updateValue} vertical />;
 };
 
+export const useCN = () => {
+  const { locale } = React.useContext(MdocSiteContext);
+  if (!locale) return true
+  return locale.current[0] === 'zh';
+}
+
 export default () => {
+  const isCN = useCN();
+
   return (
     <div className="_home-container">
       <div className="_home-container-left">
@@ -74,7 +83,7 @@ export default () => {
                 window.location.href = '/components';
               }}
             >
-              组件列表
+              {isCN ? `组件列表` : `Components`}
             </Button>
             <Button
               size="large"
@@ -87,7 +96,7 @@ export default () => {
               iconPosition="right"
               style={{ width: 148 }}
             >
-              开始使用
+              {isCN ? `开始使用` : `Get Started`}
             </Button>
           </Space>
         </Space>
@@ -209,7 +218,7 @@ export default () => {
           </Flex.Item>
           <Flex.Item span={12}>
             <Space direction="vertical" gap={40} block>
-              <Calendar className="_home-calendar" showConfirm={false} poppable={false} />
+              <Calendar title={ isCN ? '日期选择' : 'Calender'} className="_home-calendar" showConfirm={false} poppable={false} />
               <Tabs className="_home-tabs">
                 {['Yesterday', 'Today', 'Tomorrow'].map((el) => (
                   <Tabs.TabPane key={el} title={el} />

@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@rcdoc/cli': ^0.0.0-dev.4
+  '@rcdoc/theme': ^0.0.0-dev.1
   '@react-spring/web': ^9.3.0
   '@react-vant/icons': latest
   '@types/react': ^17.0.37
@@ -19,6 +20,7 @@ specifiers:
 
 dependencies:
   '@rcdoc/cli': 0.0.0-dev.4_fd20b86d2e16d6974276ff729364c27a
+  '@rcdoc/theme': 0.0.0-dev.1
   '@react-spring/web': 9.4.4_react-dom@17.0.2+react@17.0.2
   '@react-vant/icons': 0.0.6
   '@use-gesture/react': 10.2.11_react@17.0.2
